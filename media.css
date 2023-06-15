@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
     body {
         min-height: 100vh;
+    }
     main {
         width: 90%;
     }
