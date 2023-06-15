@@ -14,15 +14,8 @@
 </head>
 <body>
 
-  
-  <!-- <img src="design/mobile-design.jpg" alt=""> -->
-
-  <!-- <div id="canvas">
-    <div id="output"> -->
-
-
-  <img class="background top" src="images/bg-pattern-top.svg" alt="">
   <main>
+      <img class="background top" src="images/bg-pattern-top.svg" alt="">
     <div class="head">
       <img src="images/bg-pattern-card.svg" alt="">
     </div>
@@ -45,75 +38,13 @@
         </div>
       </div>
     </section>
+    <img class="background bottom" src="images/bg-pattern-bottom.svg" alt="">
   </main>
-  <img class="background bottom" src="images/bg-pattern-bottom.svg" alt="">
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://JatinPoriya.epizy.com" target="_blank">Jatin Poriya</a>.
   </div> -->
-
-
-
-    <!-- </div>
-    <img id="img" src="design/mobile-design.jpg" alt="">
-  </div> -->
-
-
-<style>
-
-#canvas{
-    position: relative;
-    cursor: col-resize;
-    background: lightblue;
-    width: 500px;
-}
-
-#output{
-    overflow: hidden;
-    width: 1000px;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-    mix-blend-mode: normal;
-    pointer-events: none;
-    box-shadow: red 2px 0px 0px;
-}
-#output iframe{
-    background: rgb(207, 188, 188);
-    width: 500px;
-    height: 300px;
-    border: 0px;
-    outline: 0px;
-}
-#img{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    /* width: clamp(0px, 500px, 100%); */
-}
-</style>
-
-<script>
-
-const canvas = document.getElementById('canvas');
-const output = document.getElementById('output');
-
-canvas.addEventListener('mousemove', pointGet);
-canvas.addEventListener('touchstart', pointGet);
-
-function pointGet(event) {
-    let x = event.offsetX;
-    // let y = event.offsetY;
-
-    // if()
-    output.style.width = x+'px';
-    console.log(x);
-}
-
-
-
-</script>
 
 </body>
 </html>
